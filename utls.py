@@ -12,16 +12,16 @@ from redashAPI.client import RedashAPIClient
 
 
 # Auth Keys for YaMetrika
-YA_OAUTH_TOKEN = 'AQAAAAABAd4nAAWRa2NWla_OKUp8jlzByv1FLM4'
-YA_COUNTER_ID  = 52450018
+YA_OAUTH_TOKEN = ''
+YA_COUNTER_ID  = ''
 
 # Auth Keys for Amplitude
-AMPL_API_KEY    = '3f385945863d394028c973c509bf8008'
-AMPL_SECRET_KEY = '9c36490ddfb089edbb01e755cf61ca73'
+AMPL_API_KEY    = ''
+AMPL_SECRET_KEY = ''
 
 # Auth Keys for Redash
-REDASH_API_KEY  = 'HemVtFsZkeXX2Q7XCtwde6Ip2hQjBE4NFLZ4z87M'
-REDASH_HOST     = 'https://redash.kimberlite.io'
+REDASH_API_KEY  = ''
+REDASH_HOST     = ''
 
 
 def check_present_data(folder):
