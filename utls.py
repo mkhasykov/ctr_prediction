@@ -128,8 +128,8 @@ def segment_builder(event, filters, groups):
     return request
 
 def amplitude_request(date, segmentation,
-                      AMPL_API_KEY = '3f385945863d394028c973c509bf8008', 
-                      AMPL_SECRET_KEY = '9c36490ddfb089edbb01e755cf61ca73'):
+                      AMPL_API_KEY = '', 
+                      AMPL_SECRET_KEY = ''):
     start = "curl -s -u "
     url   = "https://amplitude.com/api/2/events/segmentation?"
     left = "&m=totals&start=" + date + "&end=" + date
