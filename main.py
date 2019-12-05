@@ -14,38 +14,38 @@ DEFAULT_FOLDER_PATH = './data'
 def setup_parser(parser):
     
     parser.add_argument(
-            "-f", "--folder", default=DEFAULT_FOLDER_PATH, dest="folder",
-            help="path to folder where parsed data should be saved",
+        "-f", "--folder", default=DEFAULT_FOLDER_PATH, dest="folder",
+        help="path to folder where parsed data should be saved",
     )
     parser.add_argument(
-            "-o", "--output", required=True, dest="output",
-            help="output file (json) path",
-            )
+        "-o", "--output", required=True, dest="output",
+        help="output file (json) path",
+    )
     parser.add_argument(
-            "-n", "--num_epoch", type=int, required=False, default=5, dest="num_epoch",
-            help="number of train epochs. Default value is 5",
-            )
+        "-n", "--num_epoch", type=int, required=False, default=5, dest="num_epoch",
+        help="number of train epochs. Default value is 5",
+    )
     parser.add_argument(
-            "-d", "--dim_hash", type=int, required=False, default=18, dest="d",
-            help="parameter determines number of OHE features as 2**d. Default value is 18." + 
-            "For sake of results adequacy, values less than 15 are prohibited.",
-            )
+        "-d", "--dim_hash", type=int, required=False, default=18, dest="d",
+        help="parameter determines number of OHE features as 2**d. Default value is 18." + 
+        "For sake of results adequacy, values less than 15 are prohibited.",
+    )
     parser.add_argument(
-            "-alpha", "--alpha", type=float, required=False, default=0.1, dest="alpha", 
-            help="ftrl alpha parameter. Default value is .1",
-            )
+        "-alpha", "--alpha", type=float, required=False, default=0.1, dest="alpha", 
+        help="ftrl alpha parameter. Default value is .1",
+    )
     parser.add_argument(
-            "-beta", "--beta", type=float, required=False, default=1.0, dest="beta", 
-            help="ftrl beta parameter. Default value is 1.",
-            )
+        "-beta", "--beta", type=float, required=False, default=1.0, dest="beta", 
+        help="ftrl beta parameter. Default value is 1.",
+    )
     parser.add_argument(
-            "-l1", "--l1", type=float, required=False, default=0.0, dest="l1", 
-            help="L1 regularization parameter. Default value is 0.",
-            )
+        "-l1", "--l1", type=float, required=False, default=0.0, dest="l1", 
+        help="L1 regularization parameter. Default value is 0.",
+    )
     parser.add_argument(
-            "-l2", "--l2", type=float, required=False, default=0.0, dest="l2", 
-            help="L2 regularization parameter. Default value is 0.",
-            )
+        "-l2", "--l2", type=float, required=False, default=0.0, dest="l2", 
+        help="L2 regularization parameter. Default value is 0.",
+    )
     
     
 def process_data(input_args):
